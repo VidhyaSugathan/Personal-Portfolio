@@ -1,0 +1,25 @@
+/* about.css */
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+h2 {
+  color: yellow;
+  font-size: 32px;
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  color: white;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.8;
+  font-size: 18px;
+  padding: 0 20px;
+}

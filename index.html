@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/style.css  " />
+    <link rel="stylesheet" href="/skill.css  " />
+    <link rel="stylesheet" href="/about.css  " />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "lXjr4BmzJGYArravh",
+        });
+      })();
+    </script>
+    <script src="index.js"></script>
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="header">
+        <div class="headname">
+          <h3>Vidhya</h3>
+        </div>
+        <div class="headbtn">
+          <nav>
+            <a href="#index">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact Me</a>
+          </nav>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="midleft">
+          <h3>Hi There!</h3>
+          <h1>I am Developer|</h1>
+          <h3>I make the complex simple</h3>
+          <button>Contact Me</button>
+          <div class="leftbot">
+            <div class="rightline">
+              <h6>Email</h6>
+              <p>vidhyasugathan19@gmail.com</p>
+            </div>
+            <div class="leftline">
+              <h6>Phone</h6>
+              <p>+91 9400466656</p>
+            </div>
+            <div class="rightline">
+              <h6>Location</h6>
+              <p>Kerala, India</p>
+            </div>
+          </div>
+        </div>
+        <div class="midright">
+          <img src="./images/personal.jpeg" />
+        </div>
+      </div>
+      <div>
+        <h1 id="about">About</h1>
+        <h2>Hi there I'm Vidhya,</h2>
+        <p>
+          I enjoy guiding clients through the full lifecycle of a website—from
+          initial vision and concept discussions, to design planning,
+          development execution, and ultimately launch. At the start, I
+          collaborate with you to build a clear roadmap—understanding your
+          goals, target audience, and desired user experience. Together, we
+          refine structure and layout through sketches or mockups, ensuring
+          everything aligns with your brand and expectations.
+          <br />
+          Once the design is in place, I transition into development,
+          translating approved concepts into a polished, responsive site while
+          continually coordinating with you for alignment and feedback. Before
+          launch, I oversee thorough testing to ensure every feature works
+          seamlessly and performs well across devices. Finally, I manage the
+          deployment and ensure a smooth delivery, so your website goes live
+          looking—and working—just as intended.
+        </p>
+      </div>
+      <div>
+        <h1 id="skill">Skills</h1>
+        <div class="skillbox">
+          <div class="boxes">
+            <div class="box"><img src="./images/Html.png" /></div>
+            <div class="box"><img src="./images/Css.png" /></div>
+            <div class="box"><img src="./images/Js.png" /></div>
+          </div>
+          <div class="boxes">
+            <div class="box"><img src="./images/MySql.png" /></div>
+            <div class="box"><img src="./images/React.png" /></div>
+            <div class="box"><img src="./images/Node.png" /></div>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio">
+        <div class="container">
+          <h1 id="project">Projects</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="./images/work-1.png" />
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>
+                  The app connects you the talented people around the world.
+                  Download it from play store.
+                </p>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./images/work-2.png" />
+              <div class="layer">
+                <h3>Music App</h3>
+                <p>
+                  The app connects you the talented people around the world.
+                  Download it from play store.
+                </p>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./images/work-3.png" />
+              <div class="layer">
+                <h3>Online Store App</h3>
+                <p>
+                  The app connects you the talented people around the world.
+                  Download it from play store.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 id="contact">Contact Me</h1>
+        <div class="row">
+          <div class="col-md-6 p-5 bg-warning text-white">
+            <h2>Hi there,</h2>
+            <h5>
+              If you have project or need help,<br />
+              Contact Me
+            </h5>
+          </div>
+          <div class="col-md-6py-3">
+            <div class="form-group">
+              <h5 for="name">Name</h5>
+              <input
+                class="form-control"
+                type="text"
+                id="name"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="form-group">
+              <h5 for="email">Email</h5>
+              <input
+                class="form-control"
+                type="email"
+                id="email"
+                placeholder="Your Email"
+              />
+            </div>
+            <div>
+              <textarea id="message" rows="3" class="form-control"></textarea>
+            </div>
+            <button onclick="sendMail()" class="btn btn-primary">
+              Send Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
