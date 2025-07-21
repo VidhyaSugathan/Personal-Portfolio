@@ -23,3 +23,59 @@ p {
   font-size: 18px;
   padding: 0 20px;
 }
+/* About Section */
+#about, #contact {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 36px;
+  color: yellow;
+}
+
+#about + h2,
+#about + h2 + p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+/* Contact Section */
+#contact + .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 30px;
+}
+
+.col-md-6, .col-md-6py-3 {
+  flex: 1 1 45%;
+  padding: 20px;
+}
+
+.bg-warning {
+  background-color: yellow !important;
+  color: black !important;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+button.btn {
+  padding: 10px 20px;
+  background-color: yellow;
+  border: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #e5db00;
+}

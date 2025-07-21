@@ -25,7 +25,9 @@ body {
   margin: 0;
   width: 50%;
 }
-
+.headname h3:hover{
+  color: white;
+}
 .headbtn nav a {
   width: 50%;
   padding: 10px 20px;
@@ -43,7 +45,7 @@ body {
   border-radius: 5px;
 }
 
-/* Hero Section */
+/* Middle Section */
 .middle {
   display: flex;
   flex-wrap: wrap;
@@ -74,6 +76,7 @@ body {
   font-weight: bold;
   transition: 0.3s ease;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .midleft button:hover {
@@ -89,7 +92,7 @@ body {
 
 .leftline,
 .rightline {
-  flex: 1;
+  
   padding: 10px;
   border-left: 1px solid white;
 }
@@ -101,74 +104,73 @@ body {
   border-radius: 10px;
 }
 
-/* About Section */
-#about, #contact {
-  text-align: center;
-  padding-top: 60px;
-  font-size: 36px;
-  color: yellow;
-}
 
-#about + h2,
-#about + h2 + p {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  line-height: 1.8;
-}
 
-/* Contact Section */
-#contact + .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px;
-  gap: 30px;
-}
-
-.col-md-6, .col-md-6py-3 {
-  flex: 1 1 45%;
-  padding: 20px;
-}
-
-.bg-warning {
-  background-color: yellow !important;
-  color: black !important;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0 20px;
-  border: none;
-  border-radius: 4px;
-}
-
-button.btn {
-  padding: 10px 20px;
-  background-color: yellow;
-  border: none;
-  color: black;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-button.btn:hover {
-  background-color: #e5db00;
-}
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-  .middle {
+  /* Make header vertical */
+  .header {
     flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .headname {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .headname h3 {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .headbtn {
+    width: 100%;
+    justify-content: center;
   }
 
   .headbtn nav {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .headbtn nav a {
+    width: 80%;
+    padding: 12px;
+    margin: 5px 0;
+    font-size: 16px;
+    color: yellow;
+    background-color: transparent;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .headbtn nav a:hover {
+    background-color: yellow;
+    color: black;
+  }
+
+  .middle {
+    flex-direction: column;
+  }
+ .midright {
+    width: 100%;
+    display: flex;
     justify-content: center;
+    margin-top: 20px;
+  }
+  .midright img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 80px;
   }
 
   .leftbot {
@@ -176,3 +178,4 @@ button.btn:hover {
     gap: 20px;
   }
 }
+
