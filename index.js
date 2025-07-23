@@ -4,13 +4,12 @@ function sendMail() {
     email: document.getElementById("email").value,
     message: document.getElementById("message").value,
   };
-  if (!name || !email || !message) {
+  if (!params.name || !params.email || !params.message) {
     alert("Please fill in all fields before sending your message.");
     return;
   }
   const serviceID = "service_lgul4kf";
   const templateID = "template_v6gpicn";
-
   emailjs
     .send(serviceID, templateID, params)
     .then((res) => {
